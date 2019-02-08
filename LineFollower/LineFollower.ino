@@ -1,19 +1,15 @@
 #include "MeMCore.h"
 
 MeLineFollower lineFinder(PORT_2);
-
 MeDCMotor motor1(M1);
-
 MeDCMotor motor2(M2);
 
 uint8_t motorSpeed = 255;
 
-void setup()
-{
+void setup(){
 }
 
-void loop()
-{
+void loop(){
   int sensorState = lineFinder.readSensors();
   switch(sensorState) {
     case S1_IN_S2_IN:
