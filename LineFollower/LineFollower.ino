@@ -6,7 +6,7 @@ MeDCMotor motor1(M1);
 
 MeDCMotor motor2(M2);
 
-uint8_t motorSpeed = -100;
+uint8_t motorSpeed = 255;
 
 void setup()
 {
